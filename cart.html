@@ -36,13 +36,13 @@
 
     <div class="col-2">
         <section class="cart-content">
-            <div class="cart-item">
-                <div class="flex-row">
-                    <h1>Your Cart</h1>
-                    <div class="btn-add">+</div>
-                </div>
+            <div class="cart-header flex-row spread">
+                <h1>Your Cart</h1>
+                <button class="btn-add">+</button>
+            </div>
 
-                <div class="card col-4">
+            <div class="cart-item">
+                <div class="col-4">
                     <div class="mini-thumbnail">
                         <img src="./x.png" alt="Mini Item Image" class="splash-img">
                     </div>
@@ -63,17 +63,12 @@
                         <p class="cart-price">₱167</p>
                     </div>
 
-                    <div class="btn-remove">REMOVE</div>
+                    <button class="btn-remove">REMOVE</button>
                 </div>
             </div>
 
             <div class="cart-item">
-                <div class="flex-row">
-                    <h1>Your Cart</h1>
-                    <div class="btn-add">+</div>
-                </div>
-
-                <div class="card col-4">
+                <div class="col-4">
                     <div class="mini-thumbnail">
                         <img src="./x.png" alt="Mini Item Image" class="splash-img">
                     </div>
@@ -94,17 +89,12 @@
                         <p class="cart-price">₱167</p>
                     </div>
 
-                    <div class="btn-remove">REMOVE</div>
+                    <button class="btn-remove">REMOVE</button>
                 </div>
             </div>
 
             <div class="cart-item">
-                <div class="flex-row">
-                    <h1>Your Cart</h1>
-                    <div class="btn-add">+</div>
-                </div>
-
-                <div class="card col-4">
+                <div class="col-4">
                     <div class="mini-thumbnail">
                         <img src="./x.png" alt="Mini Item Image" class="splash-img">
                     </div>
@@ -125,14 +115,125 @@
                         <p class="cart-price">₱167</p>
                     </div>
 
-                    <div class="btn-remove">REMOVE</div>
+                    <button class="btn-remove">REMOVE</button>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <div class="col-4">
+                    <div class="mini-thumbnail">
+                        <img src="./x.png" alt="Mini Item Image" class="splash-img">
+                    </div>
+
+                    <div class="flex-col">
+                        <p class="cart-item-name">Food Item Name</p>
+
+                        <p class="cart-item-details">Lorem, Ipsum, Dolor, Sit, Amet, Tema, Tis, Rolod</p>
+                    </div>
+
+                    <div class="flex-col">
+                        <div class="quantifier col-adapt">
+                            <button class="quantity-btn">-</button>
+                            <p class="quantity-value">1</p>
+                            <button class="quantity-btn">+</button>
+                        </div>
+
+                        <p class="cart-price">₱167</p>
+                    </div>
+
+                    <button class="btn-remove">REMOVE</button>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <div class="col-4">
+                    <div class="mini-thumbnail">
+                        <img src="./x.png" alt="Mini Item Image" class="splash-img">
+                    </div>
+
+                    <div class="flex-col">
+                        <p class="cart-item-name">Food Item Name</p>
+
+                        <p class="cart-item-details">Lorem, Ipsum, Dolor, Sit, Amet, Tema, Tis, Rolod</p>
+                    </div>
+
+                    <div class="flex-col">
+                        <div class="quantifier col-adapt">
+                            <button class="quantity-btn">-</button>
+                            <p class="quantity-value">1</p>
+                            <button class="quantity-btn">+</button>
+                        </div>
+
+                        <p class="cart-price">₱167</p>
+                    </div>
+
+                    <button class="btn-remove">REMOVE</button>
                 </div>
             </div>
         </section>
 
-        <div class="receipt">
-            <h1>Order Summary</h1>
+        <div class="receipt-container">
+            <div class="receipt">
+                <h1 class="receipt-header">Order Summary</h1>
+                <br>
 
+                <div class="receipt-item-line">
+                    <div class="item-linelabel">Food Item Name</div>
+                    <p class="item-lineprice">₱167</p>
+                </div>
+
+                <div class="receipt-item-line">
+                    <div class="item-linelabel">Food Item Name</div>
+                    <p class="item-lineprice">₱167</p>
+                </div>
+
+                <div class="receipt-item-line">
+                    <div class="item-linelabel">Food Item Name</div>
+                    <p class="item-lineprice">₱167</p>
+                </div>
+
+                <div class="receipt-item-line">
+                    <div class="item-linelabel">Food Item Name</div>
+                    <p class="item-lineprice">₱167</p>
+                </div>
+
+                <div class="receipt-item-line">
+                    <div class="item-linelabel">Food Item Name</div>
+                    <p class="item-lineprice">₱167</p>
+                </div>
+
+                
+
+                <!-- <div class="receipt-item-line">
+                    <div class="item-linelabel">Food Item Name (5)</div>
+                    <p class="item-lineprice">₱835</p>
+                </div> -->
+
+                <div class="receipt-line">
+                    <div class="linelabel">Subtotal</div>
+                    <p class="lineprice">₱835</p>
+                </div>
+
+                <div class="receipt-line">
+                    <div class="linelabel">Discount</div>
+                    <p class="lineprice">-₱0</p>
+                </div>
+
+                <div class="receipt-line totalline">
+                    <div class="totallabel">TOTAL</div>
+                    <p class="totalprice">₱835</p>
+                </div>
+
+                <div class="receipt-action flex-col">
+                    <div class="promocode-label">Promo Code</div>
+                    <div class="flex-row center-v">
+                        <input type="text" placeholder="Enter promo code..." class="form-input">
+                        <button class="apply-code-btn">Apply</button>
+                    </div>
+                    <p class="err">Message here if code is invalid</p>
+                    <button class="receipt-confirm-btn">PROCEED TO CHECKOUT</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
