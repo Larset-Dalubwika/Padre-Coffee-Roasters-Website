@@ -103,7 +103,26 @@ header {
     /* font-size: 1.2rem; */
     font-weight: bold;
     transform: translateY(-3px);
-    margin-left: 5px;
+    /* margin-left: 5px; */
+}
+
+.nav-link.active {
+    font-weight: bold;
+    outline: 2px solid var(--dark);
+    outline-offset: 7px;
+    border-radius: 10px;
+    animation: nav-active-in 0.35s ease;
+}
+
+@keyframes nav-active-in {
+    from {
+        outline-color: transparent;
+        outline-offset: 0px;
+    }
+    to {
+        outline-color: var(--dark);
+        outline-offset: 7px;
+    }
 }
 
 .lower-header {
@@ -412,8 +431,9 @@ button:active {
     height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 30px;
+    padding: 15px;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 .not-sidebar {
@@ -440,7 +460,25 @@ button:active {
     transition: all 0.15s ease;
 }
 
-.sidebar-nav:hover {
+.sidebar-nav-container {
+    width: 100%;
+    min-height: 55px;
+    padding: 16px 20px 16px 15px;   /* top, right, bottom, left */
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+/* .sidebar-nav-container {
+    width: 100%;
+    height: 55px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+} */
+
+.sidebar-nav-container:hover > .sidebar-nav:not(.active) {
+    /* when container is hovered, apply ff. to child sidebar-nav that's not active */
     font-weight: 700;
     font-size: 1.2rem;
     outline: 2px solid var(--dark);
@@ -457,6 +495,14 @@ button:active {
     color: var(--bg);
     box-shadow: 0 0 0 12px var(--dark);
 
+    transition: all 0.1s ease;
+
+    
+}
+
+.sidebar-nav-container.active {
+    margin-top: 15px;
+    margin-bottom: 15px;
     transition: all 0.1s ease;
 }
 
@@ -684,7 +730,10 @@ button:active {
 }
 
 .select-panel {
-    margin-top: 50px;
+    padding-top: 50px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 .selected-item-name {
@@ -723,7 +772,7 @@ button:active {
 
 .final-choices {
     margin-right: 150px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     margin-top: 30px;
     gap: 10px;
 }
@@ -1003,5 +1052,18 @@ button:active {
     color: var(--text);
     transform: translateY(2px);
     
+    transition: all 0.1s ease;
+}
+
+.header-login {
+    font-weight: bold;
+}
+
+.header-login:hover {
+    transform: translateY(-5px);
+}
+
+.header-login:active {
+    transform: translateY(0px);
     transition: all 0.1s ease;
 }
