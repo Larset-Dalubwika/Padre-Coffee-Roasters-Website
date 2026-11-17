@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="./pcr.css">
+
+    <script src="./placeholder-images.js"></script>
+</head>
+
+<body>
+    <header>
+        <section class="upper-header">
+            <img src="./assets/iconography/logo.png" alt="Logo" class="logo">
+            <p class="brand">Padre Coffee Roasters</p>
+            <nav class="header-nav">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./menu.html" class="nav-link">Menu</a>
+                <a href="./cart.html" class="nav-link">Cart</a>
+                <a href="./about.html" class="nav-link">About</a>
+
+                <form action="login.html">
+                    <button class="btn-dark header-login">Log In</button>
+                </form>
+            </nav>
+        </section>
+    </header>
+    <div class="filler"></div>
+
+    <div class="col-2">
+        <section class="checkout-panel">
+            <h1>Checkout</h1>
+
+            <br>
+
+            <div class="form-container margin-down">
+                <p class="form-label">Name</p>
+                <input type="text" placeholder="Enter your name (autofilled when logged in)" class="form-input">
+            </div>
+            
+            <div class="form-container margin-down">
+                <p class="form-label">Email</p>
+                <input type="text" placeholder="Enter your email (autofilled when logged in)" class="form-input">
+            </div>
+
+            <div class="form-container">
+                <p class="form-label">Phone Number</p>
+                <input type="text" placeholder="Enter your phone number (autofilled when logged in)" class="form-input">
+            </div>
+
+            
+        </section>
+
+        <div class="receipt-container">
+            <div class="receipt">
+                <h1 class="receipt-header">Order Summary</h1>
+                <br>
+
+                <div class="receipt-item-line">
+                    <div class="item-linelabel">Food Item Name</div>
+                    <p class="item-lineprice">₱167</p>
+                </div>
+
+                <div class="receipt-item-line">
+                    <div class="item-linelabel">Food Item Name</div>
+                    <p class="item-lineprice">₱167</p>
+                </div>
+
+                <div class="receipt-item-line">
+                    <div class="item-linelabel">Food Item Name</div>
+                    <p class="item-lineprice">₱167</p>
+                </div>
+
+                <div class="receipt-item-line">
+                    <div class="item-linelabel">Food Item Name</div>
+                    <p class="item-lineprice">₱167</p>
+                </div>
+
+                <div class="receipt-item-line">
+                    <div class="item-linelabel">Food Item Name</div>
+                    <p class="item-lineprice">₱167</p>
+                </div>
+
+
+
+                <!-- <div class="receipt-item-line">
+                    <div class="item-linelabel">Food Item Name (5)</div>
+                    <p class="item-lineprice">₱835</p>
+                </div> -->
+
+                <div class="receipt-line">
+                    <div class="linelabel">Subtotal</div>
+                    <p class="lineprice">₱835</p>
+                </div>
+
+                <div class="receipt-line">
+                    <div class="linelabel">Discount</div>
+                    <p class="lineprice">-₱0</p>
+                </div>
+
+                <div class="receipt-line totalline">
+                    <div class="totallabel">TOTAL</div>
+                    <p class="totalprice">₱835</p>
+                </div>
+
+                <div class="receipt-action flex-col">
+                    <div class="promocode-label">Promo Code</div>
+                    <div class="flex-row center-v">
+                        <input type="text" placeholder="Enter promo code..." class="form-input">
+                        <button class="apply-code-btn">Apply</button>
+                    </div>
+                    <p class="err">Message here if code is invalid</p>
+                </div>
+            </div>
+
+            <button class="receipt-confirm-btn">PLACE ORDER</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
