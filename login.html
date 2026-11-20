@@ -1,43 +1,66 @@
 <!DOCTYPE html>
+<!-- Kataraman: Ingles -->
 <html lang="en">
 
+<!-- PAYO -->
 <head>
+    <!-- Panùgod sa Google Fonts tanganing mautilisar su mga fonts ninda -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Partikular na an Montserrat, su font a gīgámit ta sa kanganaan (default) -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <!-- Pigagámit an UTF-8 tanganing di' magkaprobléma kin ayo UTF-8 characters -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Su título -->
     <title>Login</title>
+
+    <!-- Su stylesheet -->
     <link rel="stylesheet" href="./pcr.css">
 </head>
 
+<!-- LAWAS -->
 <body>
+    <!-- Pigpábətnga' ubos; nakapaləg didi su ubos -->
     <div class="center-container">
+
+        <!-- Pamayo (Header) -->
         <h2>Log in</h2>
 
+        <!-- Su bəbtangan ning form -->
         <div class="form-container">
+            <!-- Título san form -->
             <p class="form-label">EMAIL</p>
-            <input type="text" placeholder="Enter your email" class="form-input">
+            <!-- Watak (placeholder), su nakabətang sa kanganaan didi -->
+            <input type="text" placeholder="Enter your email" class="form-input" type="email">
         </div>
 
         <div class="form-container">
             <p class="form-label">PASSWORD</p>
-            <input type="password" placeholder="Enter your password" class="form-input">
+            <input type="password" placeholder="Enter your password" class="form-input" type="password">
         </div>
 
-        <a class="center forgot-pass maxwidth">Forgot Password?</a>
+        <!-- kapag nalipngan san tagagámit su password nya, didi sya pipindot -->
+        <a class="center forgot-pass maxwidth" href="./forgot-password.html">Forgot Password?</a>
 
+        <!-- Mariknəm a pindutang maiwas, mas saday ta' ayo ".sign-in" a class -->
         <a class="a btn-dark maxwidth">Log in</a>
 
+        <!-- Nakabətngang téksto -->
         <p class="center">or</p>
 
+        <!-- Mariknəm a pindutang maiwas -->
         <a class="a btn maxwidth">
+            <!-- Lógo san Google -->
             <img src="./assets/iconography/google.svg" alt="Google Icon" class="icon-s">
+
             Log in with Google
         </a>
 
+        <!-- Pindutan parangəp sa sign-up page -->
         <a href="./signup.html" class="a btn-borderless center btn-signup maxwidth">Need an account? Sign Up</a>
     </div>
 </body>
