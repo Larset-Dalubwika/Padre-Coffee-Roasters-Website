@@ -649,7 +649,7 @@ button:active {
 
 .form-label {
     font-size: 0.8rem;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .form-input {
@@ -1140,20 +1140,94 @@ button:active {
 .delivery-option-btn:hover {
     font-size: 1rem;
     transform: translateY(-3px);
-
 }
 
 .delivery-option-btn.active {
     background-color: var(--dark);
     color: var(--bg);
     transform: translateY(0px);
+    transition-duration: 0.1s;
 }
 
 .delivery-option-btn:active {
-    transform: translateY(3px);
-    font-size: 0.8rem;
+    transform: translateY(5px);
+    font-size: 1rem;
+    transition: all 0.05s ease-in-out;
 }
 
 .delivery-option-container {
-    margin-top: 10px;
+    margin: 0px 0px 15px 0px;
+    gap: 5px;
+}
+
+.form-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 15px 0px 10px 0px;
+    text-transform: uppercase;
+}
+
+.payment-option-btn {
+    border-radius: 10px;
+    transform: translateY(0px);
+    border: 2px solid var(--dark);
+    color: var(--text);
+    background-color: var(--bg);
+    width: 100%
+}
+
+.payment-option-btn:hover {
+    font-size: 1rem;
+    transform: translateY(-3px);
+}
+
+.payment-option-btn.active {
+    background-color: var(--dark);
+    color: var(--bg);
+    transform: translateY(0px);
+    transition-duration: 0.1s;
+}
+
+.payment-option-btn:active {
+    transform: translateY(5px);
+    font-size: 1rem;
+    transition: all 0.05s ease-in-out;
+}
+
+.payment-option-container {
+    margin: 0px 0px 15px 0px;
+    gap: 5px;
+}
+
+
+.tip-option-btn {
+    border-radius: 10px;
+    transform: translateY(0px);
+    border: 2px solid var(--dark);
+    color: var(--text);
+    background-color: var(--bg);
+    width: 100%
+}
+
+.tip-option-btn:hover {
+    font-size: 1rem;
+    transform: translateY(-3px);
+}
+
+.tip-option-btn.active {
+    background-color: var(--dark);
+    color: var(--bg);
+    transform: translateY(0px);
+    transition-duration: 0.1s;
+}
+
+.tip-option-btn:active {
+    transform: translateY(5px);
+    font-size: 1rem;
+    transition: all 0.05s ease-in-out;
+}
+
+.tip-option-container {
+    margin: 0px 0px 15px 0px;
+    gap: 5px;
 }
