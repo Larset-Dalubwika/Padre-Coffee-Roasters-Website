@@ -41,6 +41,9 @@
             <h1>Checkout</h1>
 
             <br>
+            <hr>
+
+            <h2 class="form-title">Contacts</h2>
 
             <div class="form-container margin-down">
                 <p class="form-label">Name</p>
@@ -58,14 +61,50 @@
             </div>
 
             <br>
+            <hr>
 
             <div class="form-container">
+                <h2 class="form-title">Pickup or Delivery Details</h2>
                 <p class="form-label">Delivery Options</p>
-                <div class="col-2 gap delivery-option-container">
+                <div class="col-2 delivery-option-container">
                     <button class="delivery-option-btn active">Delivery</button>
                     <button class="delivery-option-btn">Pickup</button>
                 </div>
+
+                <p class="form-label">Pickup Location</p>
+                <input type="text" placeholder="Enter the pickup location" class="form-input">
+                <!-- <input type="text" placeholder="Enter the delivery address" class="form-input"> -->
             </div>
+            
+            <br>
+            <hr>
+
+            <div class="form-container">
+                <h2 class="form-title">Payment</h2>
+                <p class="form-label">Payment Options</p>
+                <div class="col-2 payment-option-container">
+                    <button class="payment-option-btn active">Card</button>
+                    <button class="payment-option-btn">Other Option</button>
+                </div>
+
+                <p class="form-label">Card Number</p>
+                <input type="text" placeholder="Enter card number" class="form-input">
+
+                <br>
+
+                <p class="form-label">Tip</p>
+                <div class="col-4 tip-option-container">
+                    <button class="tip-option-btn active">None</button>
+                    <button class="tip-option-btn">10%</button>
+                    <button class="tip-option-btn">15%</button>
+                    <button class="tip-option-btn">Custom</button>
+                </div>
+            </div>
+
+            <!-- <br> -->
+            <hr>
+
+
         </section>
 
         <div class="receipt-container">
@@ -134,7 +173,7 @@
         </div>
     </div>
 
-    <script src="./delivery-options.js"></script>
+    <script src="./options.js"></script>
 </body>
 
 </html>
