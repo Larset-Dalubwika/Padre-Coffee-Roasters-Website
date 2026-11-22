@@ -1421,3 +1421,124 @@ hr {
     transform: translateY(0);
     transition-duration: 0.1s;
 }
+
+.scrollable {
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.order-aside {
+    /* background-color: red; */
+    height: calc(100vh - 70px) !important;
+    padding: 30px 0px 15px 30px;
+}
+
+.summary-container {
+    /* padding: 30px; */
+
+    /* if I get any lower, .scrollable gets shorter too even when this is a child element! and even with the !important thing on*/
+    height: calc(100vh - 2rem - 0.8rem - 15px - 15px - 15px - 70px - 15px - 15px - 50px - 45px);
+
+    /* this is the sweet spot */
+    /* height: calc(100vh - 2rem - 0.8rem - 15px - 15px - 15px - 70px - 15px - 10px); */
+
+    align-items: center;
+}
+
+.summary-container .receipt {
+    overflow: scroll;
+    scrollbar-width: none;
+    border: 2px solid var(--dark);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-head {
+    margin-bottom: 15px;
+}
+
+.order-status {
+    height: 100vh - 70px;
+    transform: translateY(-15px);
+}
+
+.center-all {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.stat-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.status-container {
+    /* width: 100px; */
+    /* background-color: red; */
+    width: 50px;
+}
+
+.status-container-container {
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.status-container.active .stat-circle {
+    background-color: var(--dark);
+    color: var(--bg);
+    outline: 2px solid var(--dark);
+    outline-offset: 3px;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.stat-label {
+    font-weight: 500;
+}
+
+.status-container.active .stat-label {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.status-container.done .stat-circle {
+    background-color: var(--dark);
+    color: var(--bg);
+    /* outline: 2px solid var(--dark);
+    outline-offset: 5px;
+    margin-bottom: 10px; */
+}
+
+.status-container.done .stat-label {
+    font-weight: 600;
+    /* font-size: 1.2rem; */
+}
+
+.stat-circle-connector {
+    width: 50px;
+    /* abve is length of the line */
+    height: 2px;
+    background-color: var(--dark);
+    flex-shrink: 0;
+    margin-top: 24px;
+    /* circle is 50px tall: 25px center minus half the line */
+    opacity: 0.30;
+}
+
+.status-container.done + .stat-circle-connector {
+    opacity: 1;
+}
