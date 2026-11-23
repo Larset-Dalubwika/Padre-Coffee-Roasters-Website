@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <link rel="stylesheet" href="./pcr.css">
+
+    <script src="./placeholder-images.js"></script>
+</head>
+
+<body>
+    <header>
+        <section class="upper-header">
+            <img src="./assets/iconography/logo.png" alt="Logo" class="logo">
+            <p class="brand">Padre Coffee Roasters</p>
+            <nav class="header-nav">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./menu.html" class="nav-link">Menu</a>
+                <a href="./cart.html" class="nav-link">Cart</a>
+                <a href="./order-list.html" class="nav-link">Orders</a>
+                <a href="./about.html" class="nav-link">About</a>
+
+                <form action="login.html">
+                    <button class="btn-dark header-login">Log In</button>
+                </form>
+            </nav>
+        </section>
+    </header>
+    <div class="filler"></div>
+
+    <div class="col-1-2">
+        <div class="order-aside">
+            <div class="order-head">
+                <h1>Order Confirmed</h1>
+                <p class="subtext">Order #0001 - confirmation sent via email or SMS.</p>
+            </div>
+
+            <div class="summary-container">
+                <div class="receipt">
+                    <div class="receipt-item-line">
+                        <div class="item-linelabel">Food Item Name</div>
+                        <p class="item-lineprice">₱167</p>
+                    </div>
+
+                    <div class="receipt-item-line">
+                        <div class="item-linelabel">Food Item Name</div>
+                        <p class="item-lineprice">₱167</p>
+                    </div>
+
+                    <div class="receipt-item-line">
+                        <div class="item-linelabel">Food Item Name</div>
+                        <p class="item-lineprice">₱167</p>
+                    </div>
+
+                    <div class="receipt-item-line">
+                        <div class="item-linelabel">Food Item Name</div>
+                        <p class="item-lineprice">₱167</p>
+                    </div>
+
+                    <div class="receipt-item-line">
+                        <div class="item-linelabel">Food Item Name</div>
+                        <p class="item-lineprice">₱167</p>
+                    </div>
+
+
+
+                    <!-- <div class="receipt-item-line">
+                    <div class="item-linelabel">Food Item Name (5)</div>
+                    <p class="item-lineprice">₱835</p>
+                </div> -->
+
+                    <div class="receipt-line">
+                        <div class="linelabel">Subtotal</div>
+                        <p class="lineprice">₱835</p>
+                    </div>
+
+                    <div class="receipt-line">
+                        <div class="linelabel">Discount</div>
+                        <p class="lineprice">-₱0</p>
+                    </div>
+
+                    <div class="receipt-line totalline">
+                        <div class="totallabel">TOTAL</div>
+                        <p class="totalprice">₱835</p>
+                    </div>
+                </div>
+            </div>
+
+            <form action="./checkout.html">
+                <button class="receipt-confirm-btn">Reorder</button>
+            </form>
+            
+        </div>
+
+        <div class="center-all order-status flex-col">
+            <h2>Order Status</h2>
+            <div class="flex-row status-container-container center-v">
+                <div class="flex-col center-v status-container done">
+                    <div class="stat-circle">1</div>
+                    <div class="stat-label">Received</div>
+                </div>
+
+                <div class="stat-circle-connector"></div>
+
+                <div class="flex-col center-v status-container active">
+                    <div class="stat-circle">2</div>
+                    <div class="stat-label">Preparing</div>
+                </div>
+
+                <div class="stat-circle-connector"></div>
+
+                <div class="flex-col center-v status-container">
+                    <div class="stat-circle">3</div>
+                    <div class="stat-label">Ready</div>
+                </div>
+
+                <div class="stat-circle-connector"></div>
+
+                <div class="flex-col center-v status-container">
+                    <div class="stat-circle">4</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
