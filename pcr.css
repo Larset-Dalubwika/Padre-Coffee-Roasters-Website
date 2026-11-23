@@ -1,6 +1,8 @@
 :root {
     --bg: white;
+    --mutebg: rgb(236, 236, 236);
     --text: #153812;
+    --mutetext: #3e8138;
     --dark: #052e04;
     --mute: #999999;
 }
@@ -1539,6 +1541,169 @@ hr {
     opacity: 0.30;
 }
 
-.status-container.done + .stat-circle-connector {
+.status-container.done+.stat-circle-connector {
     opacity: 1;
 }
+
+.margin-whole {
+    margin: 25px 50px 25px 50px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    color: var(--dark);
+    margin-right: 10px;
+}
+
+.order-month {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.orderlist {
+    margin-left: 14px;
+    border-left: 2px solid var(--dark);
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.order:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: 2px solid var(--dark);
+    border-right: 2px solid var(--dark);
+    border-top: 2px solid var(--dark);
+}
+
+.order:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 2px solid var(--dark);
+    border-right: 2px solid var(--dark);
+    border-bottom: 2px solid var(--dark);
+}
+
+.order:only-child {
+    border-radius: 10px;
+    border: 2px solid var(--dark);
+}
+
+.order {
+    border: 1px solid var(--dark);
+    border-left: 2px solid var(--dark);
+    border-right: 2px solid var(--dark);
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+
+    transition: all 0.1s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.order-icon {
+    margin-right: 0px;
+    flex-shrink: 0;
+}
+
+.order-desc {
+    font-weight: 600;
+    line-height: 1;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.order-label {
+    flex: 1;
+    min-width: 0;
+    margin-left: 10px;
+}
+
+.order-status-tag {
+    flex-shrink: 0;
+    text-transform: uppercase;
+    border-radius: 99px;
+    border: 2px solid black;
+    font-weight: 700;
+    font-size: 0.6rem;
+    padding: 5px;
+}
+
+.order-reorder {
+    flex-shrink: 0;
+    margin-left: 15px;
+    background-color: var(--dark);
+    color: var(--bg);
+    position: relative;
+    z-index: 1;
+    /* these sit above the link layer, so it gets its own clicks */
+}
+
+.order-date {
+    font-size: 0.8rem;
+    color: var(--mutetext);
+    line-height: 1;
+    font-weight: 500;
+}
+
+.reset-lh {
+    line-height: 1;
+}
+
+.order:hover {
+    background-color: var(--mutebg);
+}
+
+.order:active {
+    background-color: var(--dark);
+    color: var(--bg);
+    transition-duration: all 0.3s ease;
+}
+
+.order:active > .icon {
+    color: var(--bg);
+    transition-duration: 0ms;
+}
+
+.order:active > .order-label > .order-date {
+    color: var(--mutebg);
+    transition-duration: 0ms;
+}
+
+.order:active > .order-status-tag {
+    border-color: var(--bg);
+    transition-duration: 0ms;
+}
+
+.order:active > .order-reorder {
+    color: var(--text);
+    background-color: var(--bg);
+    transition-duration: 0ms;
+}
+
+
+.order-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.order-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;               
+    /* these stuff stretches over the whole .order */
+}
+
+.order-link:focus-visible::after {
+    outline: 2px solid var(--dark);
+    outline-offset: 2px;
+    border-radius: 10px;
+}
+
